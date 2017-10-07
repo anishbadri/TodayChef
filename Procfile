@@ -1,1 +1,1 @@
-worker: python respond.py
+web: python respond.py
