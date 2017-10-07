@@ -33,8 +33,8 @@ def sms_reply():
 
 
 
-while True:
-	schedule.run_pending()
+# while True:
+# 	schedule.run_pending()
 if __name__ == "__main__":
 	app.run(debug=True)
 	
