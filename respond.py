@@ -9,8 +9,7 @@ import schedule
 
 print (datetime.datetime.now())
 app = Flask(__name__)
-
-schedule.every(1).minutes.do(Remainder)
+# schedule.every(1).minutes.do(Remainder)
 @app.route("/sms", methods=['GET','POST'])
 def sms_reply():
 	IncomingMsg = request.values.get('Body',None)
