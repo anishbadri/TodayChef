@@ -1,9 +1,20 @@
 from twilio.rest import TwilioRestClient as Client
-from Info_File import Accountsid, AAuthId, ANNum, TwilioNum
-
+from Info_File import Accountsid, AAuthId, ANNum, TwilioNum, Anish
 print(Accountsid)
 
-client = Client(Accountsid,AAuthId)	
+def SendMessage(number,message):
+	client = Client(Accountsid,AAuthId)	
+	client.messages.create(to=number,from_=TwilioNum,body=message)	
 
-client.messages.create(to=ANNum,from_=TwilioNum,body="First message from python to Anish for ChefTurn")	 	
+def ReminderSend(number, message):
+	client = Client(Accountsid,AAuthId)	
+	client.messages.create(to=number,from_=TwilioNum,body=message)	
+
+def Remainder():
+	print(Anish)
+	print("Running timer")
+
+ 	
+
+
 # print("Success");
