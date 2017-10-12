@@ -1,0 +1,7 @@
+Flask == 0.12.2
+
+twilio == 5.6
+
+gunicorn == 19.7
+
+APScheduler==3.0.0
