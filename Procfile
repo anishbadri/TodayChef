@@ -1,1 +1,2 @@
-web: python respond.py
+web: gunicorn respond:app 
+clock: python clock.py
